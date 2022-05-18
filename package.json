@@ -1,0 +1,20 @@
+{
+  "name": "serialize-ran3-tabular",
+  "private": true,
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "bin": {
+    "serialize-ran3-tabular": "dist.index.js"
+  },
+  "repository": "https://github.com/proj3rd/serialize-ran3-tabular",
+  "author": "Seokseong Jeon <sjeon87+github@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.34",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "commander": "^9.2.0",
+    "tabular3rd": "proj3rd/tabular3rd#v1.0.0"
+  }
+}
