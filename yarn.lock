@@ -210,9 +210,9 @@ string_decoder@~1.1.1:
   dependencies:
     safe-buffer "~5.1.0"
 
-tabular3rd@proj3rd/tabular3rd#v1.0.0:
-  version "1.0.0"
-  resolved "https://codeload.github.com/proj3rd/tabular3rd/tar.gz/60d130780e1b09c1cb613e7470d8c35147a00432"
+tabular3rd@proj3rd/tabular3rd#v1.0.1:
+  version "1.0.1"
+  resolved "https://codeload.github.com/proj3rd/tabular3rd/tar.gz/289ef53b08f4ec9e5f89dd33071fd4658479e140"
   dependencies:
     doc3rd proj3rd/doc3rd#v1.0.1
     lodash "^4.17.21"
