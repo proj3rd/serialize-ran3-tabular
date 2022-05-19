@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "bin": {
-    "serialize-ran3-tabular": "dist.index.js"
+    "serialize-ran3-tabular": "dist/index.js"
   },
   "repository": "https://github.com/proj3rd/serialize-ran3-tabular",
   "author": "Seokseong Jeon <sjeon87+github@gmail.com>",
