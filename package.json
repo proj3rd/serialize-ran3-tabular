@@ -2,7 +2,7 @@
   "name": "serialize-ran3-tabular",
   "private": true,
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "dist/index.js",
   "bin": {
     "serialize-ran3-tabular": "dist/index.js"
@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "commander": "^9.2.0",
-    "tabular3rd": "proj3rd/tabular3rd#v1.0.1"
+    "number3rd": "proj3rd/number3rd",
+    "tabular3rd": "proj3rd/tabular3rd#v1.0.1",
+    "tabular3rd-lint": "proj3rd/tabular3rd-lint"
   }
 }
