@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "commander": "^9.2.0",
-    "tabular3rd": "proj3rd/tabular3rd#v1.0.1"
+    "number3rd": "proj3rd/number3rd",
+    "tabular3rd": "proj3rd/tabular3rd#v1.0.1",
+    "tabular3rd-lint": "proj3rd/tabular3rd-lint"
   }
 }

@@ -158,6 +158,10 @@ nth-check@^2.0.1:
   dependencies:
     boolbase "^1.0.0"
 
+number3rd@proj3rd/number3rd:
+  version "1.0.2"
+  resolved "https://codeload.github.com/proj3rd/number3rd/tar.gz/f9804b9158eeeacb120c5c35bd7c1e905366e95f"
+
 pako@~1.0.2:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.11.tgz#6c9599d340d54dfd3946380252a35705a6b992bf"
@@ -209,6 +213,10 @@ string_decoder@~1.1.1:
   integrity sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==
   dependencies:
     safe-buffer "~5.1.0"
+
+tabular3rd-lint@proj3rd/tabular3rd-lint:
+  version "0.0.3"
+  resolved "https://codeload.github.com/proj3rd/tabular3rd-lint/tar.gz/365981ce8dc835b9ec1cd89e1be0d6ef0396b7bb"
 
 tabular3rd@proj3rd/tabular3rd#v1.0.1:
   version "1.0.1"
