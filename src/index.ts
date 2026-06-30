@@ -2,10 +2,24 @@
 
 import { Command } from "commander";
 import { readFileSync, writeFileSync } from "fs";
-import { versionFromString } from "number3rd";
 import { parse as parsePath } from "path";
 import { parse as parseRan3Tabular } from "tabular3rd";
 import { testCases } from "tabular3rd-lint";
+
+function versionFromChar(char: string) {
+  const converted = Number(char);
+  if (!Number.isNaN(converted)) {
+    return converted;
+  }
+  return char.charCodeAt(0) - "a".charCodeAt(0) + 10;
+}
+
+function versionFromString(str: string) {
+  const unit = str.length / 3;
+  return [0, 1, 2]
+    .map((step) => str.substring(step * unit, (step + 1) * unit))
+    .map(versionFromChar);
+}
 
 async function commandSerialize(path: string) {
   const { name } = parsePath(path);

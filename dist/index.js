@@ -10,10 +10,22 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 import { Command } from "commander";
 import { readFileSync, writeFileSync } from "fs";
-import { versionFromString } from "number3rd";
 import { parse as parsePath } from "path";
 import { parse as parseRan3Tabular } from "tabular3rd";
 import { testCases } from "tabular3rd-lint";
+function versionFromChar(char) {
+    const converted = Number(char);
+    if (!Number.isNaN(converted)) {
+        return converted;
+    }
+    return char.charCodeAt(0) - "a".charCodeAt(0) + 10;
+}
+function versionFromString(str) {
+    const unit = str.length / 3;
+    return [0, 1, 2]
+        .map((step) => str.substring(step * unit, (step + 1) * unit))
+        .map(versionFromChar);
+}
 function commandSerialize(path) {
     return __awaiter(this, void 0, void 0, function* () {
         const { name } = parsePath(path);
